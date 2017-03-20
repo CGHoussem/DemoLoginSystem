@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.payndev.demologinsystem.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@id/txt_username"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="@string/txt_username_text"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/txt_firstname"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="@string/txt_first_name_text"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/txt_lastname"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="@string/txt_last_name_text"
+            android:inputType="text"/>
+        <EditText
+            android:id="@id/txt_password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="@string/txt_password_text"
+            android:inputType="textPassword"/>
+        <EditText
+            android:id="@+id/txt_password_confirmation"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="@string/txt_password_confirmation_text"
+            android:inputType="textVisiblePassword"/>
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/btn_sign_up_text"
+            android:onClick="txt_sign_up_click"/>
+
+    </LinearLayout>
+
+</LinearLayout>

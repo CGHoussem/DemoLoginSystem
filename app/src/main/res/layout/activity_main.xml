@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.payndev.demologinsystem.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/pdev_logo"/>
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="@string/txt_username_text"
+            android:layout_margin="5dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="@string/txt_password_text"
+            android:layout_margin="5dp"
+            android:inputType="textPassword"/>
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/btn_sign_in_text"
+            android:onClick="btn_sign_in_click"/>
+        <TextView
+            android:id="@+id/txt_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/link_no_account_question"
+            android:clickable="true"
+            android:layout_marginTop="5dp"
+            android:onClick="txt_goto_sign_up_activity_click"/>
+
+    </LinearLayout>
+
+</LinearLayout>

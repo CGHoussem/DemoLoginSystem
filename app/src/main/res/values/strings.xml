@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Demo Login System</string>
+    <string name="txt_username_text">Username</string>
+    <string name="txt_password_text">Password</string>
+    <string name="btn_sign_in_text">SIGN IN</string>
+    <string name="link_no_account_question"><u>You don\'t have an account?</u></string>
+    <string name="txt_first_name_text">First Name</string>
+    <string name="txt_last_name_text">Last Name</string>
+    <string name="txt_password_confirmation_text">Password Confirmation</string>
+    <string name="btn_sign_up_text">SIGN UP</string>
+</resources>
