@@ -79,6 +79,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        // Goto home page
+        Intent intent = new Intent(this, WelcomeActivity.class);
+        intent.putExtra("USERNAME", txt_username_value);
+        startActivity(intent);
+
     }
 
     public void txt_goto_sign_up_activity_click(View view) {
