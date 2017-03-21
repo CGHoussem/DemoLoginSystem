@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context="com.payndev.demologinsystem.MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_gravity="center">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/pdev_logo"/>
+            android:src="@drawable/pdev_logo"
+            android:layout_weight="1"
+            android:contentDescription="@string/paynDevLogo_text" />
         <EditText
             android:id="@+id/txt_username"
             android:layout_width="150dp"
@@ -44,8 +46,9 @@
             android:text="@string/link_no_account_question"
             android:clickable="true"
             android:layout_marginTop="5dp"
-            android:onClick="txt_goto_sign_up_activity_click"/>
+            android:onClick="txt_goto_sign_up_activity_click"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
